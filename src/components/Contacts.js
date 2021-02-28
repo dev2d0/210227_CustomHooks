@@ -18,7 +18,7 @@ const S = {
   Image: styled.div`
     width: 580px;
     height: 580px;
-    background: no-repeat center/cover url(${contactImage});
+    
   `,
   TextWrapper: styled.div`
     box-sizing: border-box;
@@ -30,18 +30,18 @@ const S = {
   `,
   Label: styled.p`
     display: inline-block;
-    ${props => props.theme.typography.label};
-    color: ${props => props.theme.palette.primary};
+   
+
     margin-bottom: 1rem;
   `,
   Title: styled.h2`
-    ${props => props.theme.typography.subtitle};
-    color: ${props => props.theme.palette.black};
+
+
     margin-bottom: 1rem;
   `,
   Description: styled.p`
-    ${props => props.theme.typography.description};
-    color: ${props => props.theme.palette.black};
+
+
     margin-bottom: 2rem;
   `,
   Form: styled.form`
@@ -60,14 +60,14 @@ const S = {
 const Contact = () => {
   const animatedItem = {
     0: useScrollFadeIn('up', 1, 0),
-    1: useScrollFadeIn('up', 1, 0.2),
-    2: useScrollFadeIn('up', 1, 0.3),
+    1: useScrollFadeIn('down', 1, 0.2),
+    2: useScrollFadeIn('left', 1, 0.3),
     3: useScrollFadeIn('up', 1, 0.4),
   };
 
   return (
     <S.Wrapper>
-      <S.Image image={contactImage} />
+
       <S.TextWrapper>
         <S.Label {...animatedItem[0]}>Contact us</S.Label>
         <S.Title {...animatedItem[1]}>
@@ -80,12 +80,7 @@ const Contact = () => {
           nulla facilisi morbi tempus. Nulla facilisi cras fermentum odio eu.
         </S.Description>
         <S.Form {...animatedItem[3]}>
-          <TextField type="text" placeholder="Name" />
-          <TextField type="text" placeholder="Work Email Address" />
-          <TextField type="text" placeholder="Company Name" />
-          <Button fill="solid" type="submit">
-            Become a partner
-          </Button>
+        
         </S.Form>
       </S.TextWrapper>
     </S.Wrapper>

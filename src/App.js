@@ -4,6 +4,11 @@ function App() {
   return (
     <div>
       <Contacts />
+      <Contacts />
+      <Contacts />
+      <Contacts />
+      <Contacts />
+      <Contacts />
     </div>
   )
 }
