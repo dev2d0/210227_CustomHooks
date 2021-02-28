@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Contacts from './components/Contacts';
 function App() {
   return (
     <div>
-      안녕하세요
+      <Contacts />
     </div>
   )
 }
