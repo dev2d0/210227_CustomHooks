@@ -5,6 +5,8 @@ import styled from 'styled-components';
 //import { contactImage } from '../../../assets';
 import  useScrollFadeIn  from '../hooks/useScrollFadeIn';
 
+//예제
+
 const S = {
   Wrapper: styled.section`
     width: 100%;
@@ -63,7 +65,7 @@ const Contact = () => {
     1: useScrollFadeIn('down', 1, 0.2),
     2: useScrollFadeIn('left', 1, 0.3),
     3: useScrollFadeIn('up', 1, 0.4),
-  };
+  };//옵션
 
   return (
     <S.Wrapper>
